@@ -7,5 +7,8 @@ module.exports = {
     },
     mongodb: {
         dbURI: "mongodb://admin:admin1@ds219055.mlab.com:19055/auth-boilerplate"
+    },
+    session: {
+        cookieKey: 'EndlessOptimismAboutTheFuture'
     }
 }

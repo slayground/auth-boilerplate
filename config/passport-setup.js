@@ -8,6 +8,12 @@ passport.serializeUser((user, done) => {
     done(null, user.id);
 })
 
+passport.deserializeUser((id, done) => {
+    User.findById(id).then((user) => {
+        done(null, user)
+    })
+})
+
 passport.use(
     new GoogleStrategy({
         // options for a strategy
@@ -31,6 +37,7 @@ passport.use(
                 }).save().then((newUser) => {
                     console.log("New user is:");
                     console.log(newUser);
+                    done(null, newUser)
                 })
             }
         })
