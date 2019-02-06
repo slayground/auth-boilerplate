@@ -87,3 +87,7 @@ store.dispatch(createClaim('Malcolm', 20))
 store.dispatch(deletePolicy('Jason'))
 
 console.log(store.getState());
+
+//WRAP UP
+// One of the idea of redux is to get a more stable/steady curve
+// when app starts to grow
