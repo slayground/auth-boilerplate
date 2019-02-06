@@ -40,6 +40,10 @@ const createClaim = (name, amountOfMoneyToCollect) => {
 }
 
 // REDUCERS: departments
+// Different types of REDUCERS (depts)
+// 1. claimHistory: create/generate a claim
+// 2. accounting: manage company's payments
+// 3. policies: create a new policy
 
 const claimHistory = (oldListOfClaims = [], action) => {
   if (action.type === 'CREATE_CLAIM') {
