@@ -88,6 +88,10 @@ store.dispatch(deletePolicy('Jason'))
 
 console.log(store.getState());
 
-//WRAP UP
+// WRAP UP
 // One of the idea of redux is to get a more stable/steady curve
 // when app starts to grow
+
+// TRADEOFFS
+// Begin: tougher
+// Scale: easier, more stable
