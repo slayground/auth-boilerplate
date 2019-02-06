@@ -1,10 +1,11 @@
 console.clear();
 
 // ACTIONS: forms from customers
-// Different types of request
-// 1. createPolicy
-// 2. deletePolicy
-// 3. createClaim
+
+// Different types of ACTIONS (requests)
+// 1. createPolicy: pay for insurance offer
+// 2. deletePolicy: remove youself from insurance plan
+// 3. createClaim: some accident happen => collect money from contract
 
 // People dropping off a form (Action Creators)
 const createPolicy = (name, amount) => {
