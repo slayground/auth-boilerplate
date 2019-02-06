@@ -1,6 +1,11 @@
 console.clear();
 
 // ACTIONS: forms from customers
+// Different types of request
+// 1. createPolicy
+// 2. deletePolicy
+// 3. createClaim
+
 // People dropping off a form (Action Creators)
 const createPolicy = (name, amount) => {
   return { // Action (a form in insurance term)
