@@ -75,7 +75,10 @@ const policies = (listOfPolicies = [], action) => {
   }
 }
 
-const { createStore, combineReducers } = Redux;
+// combineReducers: put all reducers/depts into a single reducer
+// createStore: create a store from a single reducer
+
+const { combineReducers, createStore } = Redux;
 
 const departments = combineReducers({
   accounting: accounting,
